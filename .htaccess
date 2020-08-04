@@ -1,0 +1,12 @@
+RewriteEngine on
+
+RewriteRule ^home\.html$ media.php?module=home&id=$1 [L]
+RewriteRule ^view-produk\.html$ media.php?module=view_produk&id=$1 [L]
+RewriteRule ^tambah-produk\.html$ media.php?module=tambah_produk&id=$1 [L]
+RewriteRule ^insert-produk\.html$ media.php?module=insert_produk&id=$1 [L]
+RewriteRule ^update-produk\.html$ media.php?module=update_produk&id=$1 [L]
+RewriteRule ^ubah-produk-(.*)\.html$ media.php?module=ubah_produk&id=$1 [L]
+RewriteRule ^delete-produk-(.*)\.html$ media.php?module=delete_produk&id=$1 [L]
+
+ErrorDocument 404 /404/404.html
+Options All -Indexes
